@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a Phoneword:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="197" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="80" width="984" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1-855-XAMARIN" borderStyle="roundedRect" minimumFontSize="17" id="198" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
+                                <rect key="frame" x="20" y="115.5" width="984" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="206" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="195.5" width="984" height="30"/>
+                                <state key="normal" title="Translate"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="215" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="255.5" width="984" height="30"/>
+                                <state key="normal" title="Call"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="220" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="198" secondAttribute="trailing" constant="20"/>
+                            <constraint id="223" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="206" secondAttribute="trailing" constant="20"/>
+                            <constraint id="239" firstItem="198" firstAttribute="width" secondItem="197" secondAttribute="width"/>
+                            <constraint id="240" firstItem="206" firstAttribute="width" secondItem="197" secondAttribute="width"/>
+                            <constraint id="241" firstItem="215" firstAttribute="width" secondItem="197" secondAttribute="width"/>
+                            <constraint id="250" firstItem="197" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60"/>
+                            <constraint id="251" firstItem="215" firstAttribute="top" secondItem="206" secondAttribute="bottom" constant="30"/>
+                            <constraint id="253" firstItem="198" firstAttribute="top" secondItem="197" secondAttribute="bottom" constant="15"/>
+                            <constraint id="255" firstItem="206" firstAttribute="centerY" secondItem="198" secondAttribute="centerY" constant="80"/>
+                            <constraint id="310" firstItem="197" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="313" firstItem="206" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="544" firstItem="215" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="778" firstItem="198" firstAttribute="centerX" secondItem="197" secondAttribute="centerX"/>
+                            <constraint id="779" firstItem="206" firstAttribute="centerX" secondItem="197" secondAttribute="centerX"/>
+                            <constraint id="780" firstItem="215" firstAttribute="centerX" secondItem="197" secondAttribute="centerX"/>
+                            <constraint id="781" firstItem="198" firstAttribute="centerX" secondItem="197" secondAttribute="centerX"/>
+                            <constraint id="782" firstItem="206" firstAttribute="centerX" secondItem="197" secondAttribute="centerX"/>
+                            <constraint id="783" firstItem="215" firstAttribute="centerX" secondItem="197" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PhoneNumberText" destination="198" id="name-outlet-198"/>
+                        <outlet property="TranslateButton" destination="206" id="name-outlet-206"/>
+                        <outlet property="CallButton" destination="215" id="name-outlet-215"/>
+                        <outlet property="PhonewordLabel" destination="197" id="name-outlet-197"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
